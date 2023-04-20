@@ -1,0 +1,35 @@
+#booksCardContainer {
+    border: none;
+}
+
+#author-profile {
+    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+}
+
+#book-image-detailspage {
+    height: 560px;
+    width: 560px;
+    padding-right: 2rem;
+}
+
+#book-description {
+    margin-top: -3rem;
+    margin-left: -1rem;
+}
+.container .card ul {
+    list-style: none;
+}
+
+.container .card .books-info {
+    display: inline-block;
+    
+}
+
+#btn-submit-form {
+    width: 15rem;
+    background-color: red;
+    border: none;
+    border-radius: 25px;
+}

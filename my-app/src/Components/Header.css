@@ -1,0 +1,41 @@
+.navbar .container-fluid {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.carousel-inner .btn-carousel{
+    background-color: #f84033;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 25px;
+    border: none;
+    color: white;
+}
+
+.carousel-inner .btn-carousel:hover {
+    background-color: rgb(19, 225, 19);
+}
+
+.container .row .card .btn-read-now {
+    background-color: rgb(255, 47, 0);
+    border: none;
+    border-radius: 25px;
+    width: 8rem;
+    height: 38px;
+}
+
+#login-btn-navbar, #signup-btn-navbar {
+    border-radius: 25px;
+    border:none;
+    background-color: #f94a0a;
+}
+
+#search-box {
+    border-radius: 25px;
+}
+
+#login-btn-navbar:hover, #signup-btn-navbar:hover {
+    background-color: rgb(82, 182, 248);
+    border:none;
+}
+

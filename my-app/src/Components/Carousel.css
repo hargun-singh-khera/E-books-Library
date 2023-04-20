@@ -1,0 +1,13 @@
+.carousel-inner .btn-carousel{
+    background-color: #f84033;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 25px;
+    border: none;
+    color: white;
+}
+
+.carousel-inner .btn-carousel:hover {
+    background-color: rgb(19, 225, 19);
+}
+

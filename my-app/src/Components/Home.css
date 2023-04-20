@@ -1,0 +1,7 @@
+.container .card .btn-read-now {
+    background-color: rgb(255, 38, 0);
+    border: none;
+    border-radius: 25px;
+    width: 8rem;
+    height: 38px;
+}
