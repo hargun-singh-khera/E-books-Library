@@ -13,7 +13,6 @@ const Login = () => {
                         </div>
                         <div class="col-md-6 my-auto">
                             <div class="card-body">
-                            {/* <img src="https://i.ibb.co/f4zKzRx/logo-2.png" alt="" /> */}
                             <h5 style={{fontSize:"30px", fontFamily:"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif'"}} class="card-title mt-3 mb-3">WELCOME BACK</h5>
                             <form class="w-auto m-auto">
                                 <div class="mb-3">
