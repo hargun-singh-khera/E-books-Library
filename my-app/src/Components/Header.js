@@ -1,8 +1,44 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
+import Carousel from './Carousel'
+import Home from './Home'
 
 const Header = () => {
+    const [products, setProducts] = useState([])
+
+    useEffect(() => {
+        axios.get(`https://booken.onrender.com/books`)
+        .then((res)=> {
+            setProducts(res.data)
+            // console.log(res.data)
+        })
+        .catch((err)=> {
+            console.log(err)
+        })
+    },[]);
+    
+      const [filteredList, setFilteredList] = new useState(products);
+      
+      
+      const filterBySearch = (event) => {
+        // Access input value
+        const query = event.target.value;
+        // Create copy of item list
+        var updatedList = [...products];
+        // Include all elements which includes the search query
+        updatedList = updatedList.filter((item) => {
+            // console.log(query)
+            return item.bookTitle.toLowerCase().indexOf(query.toLowerCase()) !== -1
+        });
+        // Trigger render with updated values
+        setFilteredList(updatedList);
+        // if(filteredList) {
+        //     result=filteredList
+        // }
+        console.log(filteredList)
+    };
   return (
     <>
         <div>
@@ -39,7 +75,7 @@ const Header = () => {
                             </li>
                         </ul>
                         <form className="d-flex d-flex-form me-auto w-50" role="search">
-                            <input type="search" className="form-control" placeholder="Search..." aria-label="Search" id='search-box' />
+                            <input type="search"  onChange={filterBySearch} className="form-control" placeholder="Search..." aria-label="Search" id='search-box' />
                         </form>
                         <div className="text-alignment-auto p-2 mt-auto">
                             <Link className='nav-item active'  to="/login">
@@ -52,7 +88,7 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-        </div>    
+        </div> 
     </>
   )
 }

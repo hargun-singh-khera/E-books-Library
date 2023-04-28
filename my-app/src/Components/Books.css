@@ -1,9 +1,13 @@
 #book-image {
     max-height: 420px;
-    max-width: 300px;
+    /* max-width: 300px; */
 }
 
 #books-container-div:hover {
     transform: scale(1.1);
     /* display: inline; */
+}
+
+btn.btn-primary.btn-read-now:hover {
+    background-color: green;
 }

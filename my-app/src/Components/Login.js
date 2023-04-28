@@ -32,6 +32,9 @@ const Login = () => {
                                 <div class="text-center mt-2">
                                     <Link style={{color: "black", textDecoration: "none"}} to="/resetPassword">Forgot Password?</Link>
                                 </div>
+                                <div className="text-center mt-2">
+                                    Don't have an account?<Link style={{color: "black", textDecoration: "none"}} to="/register"> Sign Up</Link>
+                                </div>
                             </form>
                         </div>
                         </div>

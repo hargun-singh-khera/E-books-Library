@@ -11,7 +11,7 @@ class RecommendedBooks extends Component {
     return (
       <>
         {this.state.data.map((item)=>
-            <div className="col-md-3 mt-4" key={item._id} id='books-container-div'>
+            <div className="col-md-3 mt-4 d-flex justify-content-center " key={item._id} id='books-container-div'>
               <Link to={`/books/${item.title}`} style={{textDecoration:"none"}} onClick={()=>{window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}>
                     <div className="card h-100">
                         <img src={item.book_image} className="card-img-top" alt="..." id='book-image' />
@@ -28,7 +28,7 @@ class RecommendedBooks extends Component {
   }
   componentDidMount(){
     //api call
-    fetch('http://localhost:8000/books/type/recommended')
+    fetch('https://booken.onrender.com/books/type/recommended')
     .then(resp=>resp.json())
     .then(resp=>this.setState({data:resp}))
   }

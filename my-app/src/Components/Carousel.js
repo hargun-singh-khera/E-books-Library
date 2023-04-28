@@ -11,7 +11,7 @@ const Carousel = () => {
                     <div className="carousel-caption d-none d-md-block">
                         <h1 style={{color: "#091a4c"}}>Discover Your Genre</h1>
                         <p style={{color:"#091a4c"}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur ipsa dicta provident unde consequuntur laudantium!</p>
-                        <button type="button" className="btn btn-primary btn-carousel">Explore More</button>
+                        <a href="#booksDiv" style={{textDecoration:"none", color:"white"}} ><button type="button" className="btn btn-primary btn-carousel">Explore More</button></a>
                     </div>
                     </div>
                     <div className="carousel-item">
@@ -19,7 +19,7 @@ const Carousel = () => {
                     <div className="carousel-caption d-none d-md-block">
                         <h1 style={{color: "#091a4c"}}>Educational Books</h1>
                         <p style={{color:"#091a4c"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quo? Expedita quo commodi, deserunt harum culpa fugit laborum!</p>
-                        <button type="button" className="btn btn-primary btn-carousel">Explore More</button>
+                        <a href="#booksDiv" style={{textDecoration:"none", color:"white"}} ><button type="button" className="btn btn-primary btn-carousel">Explore More</button></a>
                     </div>
                     </div>
                     <div className="carousel-item">
@@ -27,7 +27,7 @@ const Carousel = () => {
                     <div className="carousel-caption d-none d-md-block">
                         <h1 style={{color: "#091a4c"}}>Fantasy Collections</h1>
                         <p style={{color:"#091a4c"}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit obcaecati voluptatibus quisquam accusantium sint maxime minus dignissimos eveniet esse blanditiis?</p>
-                        <button type="button" className="btn btn-primary btn-carousel">Explore More</button>
+                        <a href="#booksDiv" style={{textDecoration:"none", color:"white"}} ><button type="button" className="btn btn-primary btn-carousel">Explore More</button></a>
                     </div>
                     </div>
                     
