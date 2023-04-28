@@ -246,15 +246,15 @@ const Product = () => {
                     <div class="col-md-6 my-auto mt-auto">
                         <h1>Leave Your Reply</h1>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="name" name='name' placeholder="Name" />
+                            <input type="text" class="form-control" id="name" name='name' placeholder="Name"  required/>
                             <label for="name">Name</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="email" name='email' placeholder="Email" />
+                            <input type="email" class="form-control" id="email" name='email' placeholder="Email"  required/>
                             <label for="email">Email</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" placeholder="Leave a comment here" name='comments' id="comments" style={{height: "100px"}}></textarea>
+                            <textarea class="form-control" placeholder="Leave a comment here" name='comments' id="comments" style={{height: "100px"}} required></textarea>
                             <label for="comments">Comments</label>
                         </div>
                         <div class="container text-center mt-auto">
